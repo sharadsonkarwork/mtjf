@@ -1,0 +1,596 @@
+/* -----------------------------------------------------------------
+  Reset setup
+-------------------------------------------------------------------*/
+
+body{
+  margin: 0;
+  padding:0;
+  line-height: 24px;
+  overflow-x: hidden;
+  font-weight: normal;
+  font-family: 'Rubik';
+}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,
+legend,input,textarea,p,blockquote,th,td {
+    margin: 0;
+    padding: 0
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+fieldset,
+img {
+    border: 0
+}
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+    font-style: normal;
+    font-weight: normal
+}
+ol,
+ul {
+    list-style: none
+}
+caption,
+th {
+    text-align: left
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 100%;
+    font-weight: normal
+}
+q:before,
+q:after {
+    content: ''
+}
+abbr,
+acronym {
+    border: 0;
+    font-variant: normal
+}
+sup {
+    vertical-align: text-top
+}
+sub {
+    vertical-align: text-bottom
+}
+input,
+textarea,
+select {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit
+}
+input,
+textarea,
+select {
+    *font-size: 100%
+}
+legend {
+    color: #000
+}
+p,ul,h1,h2,h3,h4,h5,h6{
+  padding: 0;
+  margin: 0;
+}
+.img-responsive{
+  max-width: 100%;
+}
+a{
+  outline: none!important;
+  text-decoration: none!important;
+}
+.section{
+  padding: 0!important;
+}
+.p-d-0{
+  padding: 0!important;
+}
+.text-right{
+  text-align: right!important;
+}
+/* -----------------------------------------------------------------
+    Font setup
+-------------------------------------------------------------------*/
+@font-face {
+    font-family: 'Rubik';
+    src: url('../fonts/Rubik-Bold.woff2') format('woff2'),
+        url('../fonts/Rubik-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Luna';
+    src: url('../fonts/Luna.woff2') format('woff2'),
+        url('../fonts/Luna.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Rubik';
+    src: url('../fonts/Rubik-Medium.woff2') format('woff2'),
+        url('../fonts/Rubik-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Rubik';
+    src: url('../fonts/Rubik-Regular.woff2') format('woff2'),
+        url('../fonts/Rubik-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Rubik';
+    src: url('../fonts/Rubik-Light.woff2') format('woff2'),
+        url('../fonts/Rubik-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pacifico';
+    src: url('../fonts/Pacifico-Regular.woff2') format('woff2'),
+        url('../fonts/Pacifico-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* -----------------------------------------------------------------
+    Css Start
+-------------------------------------------------------------------*/
+.secHeader{
+  background-image: url('../images/headerbanner.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 30px;
+  display: inline-block;
+  width: 100%;
+  min-height: 1010px;
+}
+.header {
+  padding: 0 217px 0 40px;
+  width: 100%;
+}
+.logo{
+  float: left;
+}
+.logoText{
+  font-size: 30px;
+  font-family: 'Pacifico';
+  color: #fff;
+  display: inline-block;
+  padding-left: 14px; 
+}
+.navigation{
+  float: right;
+  padding-top: 12px;
+}
+.navigation .navBar > li{
+  display: inline-block;
+}
+.navigation .navBar > li > a{
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 17px;
+  margin: 0 25px;
+}
+.header-content{
+  display: inline-block;
+  width: 100%;
+  padding-top: 127px;
+}
+.content-box {
+    padding-top: 100px;
+}
+.header-content h1 {
+  color: #fff;
+  font-size: 60px;
+  font-family: 'Rubik';
+  font-weight: 500;
+  margin-bottom: 40px;
+  padding-right: 20px;
+}
+.header-content .subContent {
+  color: #fff;
+  max-width: 576px;
+  font-size: 25px;
+  font-weight: 300;
+  font-family: 'Rubik';
+  line-height: 30px;
+}
+.downloads > ul{
+  padding-left: 35px;
+  padding-top: 54px;
+}
+.downloads > ul > li {
+  display: inline-block;
+}
+.downloads > ul > li+li {
+  padding-left: 20px;
+}
+a.btn-custom.btn-dnld {
+  background-color: #fff;
+  height: 70px;
+  display: flex;
+  width: 217px;
+  border-radius: 50px;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+  font-family: 'Rubik';
+  font-weight: normal;
+}
+a.btn-custom.btn-dnld > img{
+  padding-right: 16px;
+}
+.headerMobile{
+  text-align: right;
+  padding-right: 15px;
+}
+.mobileShowcase {
+    margin: 100px 0 0;
+}
+.secGuide {
+    padding: 134px 0 110px;
+}
+.secGuide h1 {
+  font-size: 50px;
+  color: #fc3468;
+  font-family: 'Luna';
+  text-transform: capitalize;
+  text-align: center;
+  margin: 0 auto;
+  position: relative;
+  max-width: 440px;
+  line-height: 1.7; 
+}
+.secGuide h1 > small {
+  font-size: 32px;
+  color: #bababa;
+  text-transform: initial;
+  position: absolute;
+  top: 50px;
+  right: 25px;
+}
+.secGuide h1 > span{
+  font-size: 30px;
+  color: #828383;
+  font-family: 'Rubik';
+  position: relative;
+  top: -37px;
+  left: 97px;
+}
+.steps {
+    text-align: center;
+}
+.showCase-img{
+  margin-bottom: 65px;
+}
+.steps h2 {
+  font-size: 40px;
+  color: #686868;
+  font-family: 'Rubik';
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+.steps p {
+  color: #a7a7a7;
+  max-width: 330px;
+  margin: auto;
+  text-align: center;
+  font-weight: 400;
+  margin-bottom: 110px; 
+}
+.secWhyus {
+  background-image: url(../images/servicesbanner.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding: 54px 0 165px;
+}
+.secWhyus h2 {
+  color: #ff5d90;
+  font-size: 44px;
+  text-align: center;
+  font-family: 'Luna';
+  margin-bottom: 70px;
+}
+.points {
+  background: #fff;
+  text-align: center;
+  padding: 55px 22px 70px;
+}
+.points h4 {
+  color: #686868; 
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 45px;
+  margin-top: 8px;
+}
+.points p {
+    font-size: 16px;
+    color: #a7a7a7;
+    font-weight: 400;
+}
+.footerBanner{
+  background-image: url(../images/footerbanner.png);
+  min-height: 658px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding-top: 83px;
+  margin-bottom: 50px;
+}
+.footerBanner h2 {
+  color: #828383;
+  font-size: 35px;
+  line-height: 1.5;
+  float: right;
+  font-weight: lighter;
+  padding-top: 100px;
+}
+footer {
+    text-align: center;
+    position: relative;
+    padding-bottom: 20px;
+}
+footer .container{
+  position: relative;
+  z-index: 999;
+}
+footer ul > li {
+    display: inline-block;
+    min-width: 200px;
+}
+footer ul > li > a{
+  color: #8a8d8e;
+  font-size: 18px;
+}
+footer p {
+  text-align: center;
+  color: #d1d1d1;
+  font-size: 30px;
+  font-family: 'Pacifico';
+  padding: 25px 0 0;
+}
+footer ul > li:nth-child(3) {
+    min-width: auto;
+}
+.socialIcon{
+  padding-top: 30px;
+}
+.socialIcon ul > li {
+    display: inline-block;
+    min-width: auto;
+    padding: 0 10px;
+}
+
+canvas {
+  display: block;
+  vertical-align: bottom;
+}
+header {
+  background-image: url(../images/headersmbanner.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  width: 100%;
+  height: 80px;
+  vertical-align: middle;
+  align-items: center;
+}
+.secFaq h2 {
+  text-align: center;
+  font-size: 35px;
+  text-transform: uppercase;
+  margin: 40px 0;
+  padding-bottom: 15px;
+  position: relative;
+  border-bottom: 1px solid #f7f1f7;
+}
+.question {
+  font-size: 18px;
+  font-weight: 500;
+  padding-bottom: 5px;
+  position: relative;
+  padding-left: 24px;
+  color: #fc3468;
+}
+.question:after{
+  position: absolute;
+  content: "Q";
+  top: 0;
+  left: 0;
+}
+.answer{
+  font-size: 15px;
+  font-weight: 400;
+  position: relative;
+  padding-left: 24px;
+  padding-bottom: 35px;
+}
+.answer:after{
+  position: absolute;
+  content: "A";
+  top: 0;
+  left: 0;
+}
+.secFaq span {
+  font-size: 15px;
+  display: block;
+  margin: 25px 0 50px;
+  padding-left: 0px;
+}
+.table-hover tbody tr:hover {
+  background-color: #f7f7f9;
+}
+.secTandc h2 {
+  text-align: center;
+  font-size: 35px;
+  text-transform: uppercase;
+  margin: 40px 0;
+  padding-bottom: 15px;
+  position: relative;
+  border-bottom: 1px solid #f7f1f7;
+}
+.secTandc h5 {
+  text-align: center;
+  font-size: 18px;
+}
+.innerTerms {
+  margin-top: 40px;
+}
+.innerTerms .heading{
+  font-size: 18px;
+  font-weight: 500;
+  padding-bottom: 15px;
+  color: #fc3468;
+}
+.innerTerms span {
+  font-size: 15px;
+  font-weight: 400;
+  padding-bottom: 35px;
+  display: inline-block;
+  width: 100%;
+}
+.bullets > li{
+  position: relative;
+  padding-left: 15px;
+}
+.bullets > li:before{
+  position: absolute;
+  content: "";
+  height: 7px;
+  width: 7px;
+  border-radius: 50%;
+  background-color: #fc3468;
+  top: 10px;
+  left: 0;
+}
+.innerTerms span > a{
+  color: #fc3468;
+}
+.colorBold{
+  font-size: 18px;
+  font-weight: 500;
+  padding-bottom: 15px;
+  color: #fc3468;
+  display: inline-block;
+  width: 100%;
+}
+.secSafteytips h2 {
+  text-align: center;
+  font-size: 35px;
+  text-transform: uppercase;
+  margin: 40px 0;
+  padding-bottom: 15px;
+  position: relative;
+  border-bottom: 1px solid #f7f1f7;
+}
+.secSafteytips h1 {
+  text-align: center;
+  font-size: 25px;
+  margin: 40px 0;
+  position:relative;
+}
+.secSafteytips h1:after{
+    position: absolute;
+    top: 45px;
+    left: 430px;
+    content: "";
+    height: 1px;
+    width: 250px;
+    background-color: #d4d3d3;
+}
+.secSafteytips strong{
+  font-size: 18px;
+  font-weight: 500;
+  padding-bottom: 15px;
+  color: #fc3468;
+  display: inline-block;
+  width: 100%;
+  margin-top:20px;  
+}
+.secSafteytips p{
+  padding-bottom:10px;
+}
+.secSafteytips a{
+  color: #fc3468;
+}
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index:9;
+  top: 0;
+}
+@media only screen and (max-width: 1024px){
+  footer ul > li{min-width: 180px;}
+  .footerBanner h2{font-size: 28px;}
+  .header{padding: 0 40px;}
+}
+@media only screen and (max-width: 768px){
+  .header {padding: 0 40px 0 40px;}
+  .downloads > ul{padding: 35px 0 0;}
+  .downloads > ul > li+li{padding-left: 10px;}
+  .footerBanner h2{padding-top: 20px; font-size: 25px;}
+  footer ul > li > a{font-size: 16px;}
+  footer ul > li{min-width: 130px;}
+  .headerMobile {padding-top: 100px;}
+}
+@media only screen and (max-width: 767px){
+  footer ul > li{width: 100%; min-width: auto}
+  footer ul > li:nth-child(3){display: none}
+  .socialIcon ul > li{display: inline-block; min-width: auto;}
+  .footerBanner{background-size: 100%; min-height: 195px;}
+  .footerBanner h2 {padding-top: 0;font-size: 12px;}
+  .secGuide h1 > small{top: 40px;right: -5px;}
+  a.btn-custom.btn-dnld{height: 50px;width: 167px;}
+  .header-content .subContent{font-size: 22px;}
+  .header-content h1{font-size: 30px;}
+  .navigation { float: none; padding-top: 20px; display: inline-block; width: 100%; text-align: center;}
+  .logoText{font-size: 25px;}
+  .content-box {padding-top: 0;}
+  .header-content{padding-top: 80px;text-align: center;}
+  .headerMobile{text-align: center;}
+  .socialIcon ul > li{width: 17%;}
+  .socialIcon ul > li:nth-child(3){display: initial}
+  .points{margin-bottom: 15px;}
+  header{height: 120px;}
+}
+@media only screen and (max-width: 414px){
+  .logoText {font-size: 20px;}
+  a.btn-custom.btn-dnld{width: 157px;}
+  .secGuide h1{font-size: 40px;}
+  .secGuide h1 > span{top: -23px;font-size: 25px;}
+  .secWhyus h2{font-size: 35px;}
+  .footerBanner h2{background-size: 100%; font-size: 11px;}
+  .secGuide h1 > small{top: 30px; right: 20px;font-size: 28px;}
+  .footerBanner{min-height: 174px;}
+}
+@media only screen and (max-width: 320px){
+  .logoText {font-size: 18px;}
+  .navigation .navBar > li{width: 30%;}
+  a.btn-custom.btn-dnld {width: 138px;height: 42px; font-size: 14px;}
+  a.btn-custom.btn-dnld img{width: 28%;}
+  .secGuide h1 {font-size: 30px;}
+  .secGuide h1 > small {top: 28px;right: 20px;font-size: 18px;}
+  .secGuide h1 > span {top: -18px;font-size: 20px;}
+  .footerBanner h2{font-size: 10px;}
+}
